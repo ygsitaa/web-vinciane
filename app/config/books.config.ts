@@ -26,8 +26,8 @@ export const booksConfig: Book[] = [
     title: 'The Digital Odyssey',
     author: 'Vinciane',
     description: 'A journey through the virtual realms of modern storytelling, where digital and physical worlds converge.',
-    frontCoverImage: '/images/book1_front.png',
-    backCoverImage: '/images/book1_back.png',
+    frontCoverImage: 'images/book1_front.png',
+    backCoverImage: 'images/book1_back.png',
     pages: [
       { title: 'Chapter 1', content: 'The screen flickered once, then resolved into something that was neither here nor there — a landscape painted in light, breathing with the rhythm of forgotten code.' },
       { title: 'Chapter 2', content: 'She walked the corridors of data as if they were ancient hallways, each doorway leading to memories stored not in minds but in machines.' },
@@ -45,8 +45,8 @@ export const booksConfig: Book[] = [
     title: 'Neon Shadows',
     author: 'Vinciane',
     description: 'Cyberpunk aesthetics meet classical literature in a neon-drenched exploration of identity.',
-    frontCoverImage: '/images/book2_front.png',
-    backCoverImage: '/images/book2_back.png',
+    frontCoverImage: 'images/book2_front.png',
+    backCoverImage: 'images/book2_back.png',
     pages: [
       { title: 'Prologue', content: 'The city never slept, but it dreamed. Neon hieroglyphs pulsed on every surface, telling stories in a language only the lonely could read.' },
       { title: 'Part One', content: 'Rain fell through holographic advertisements, each droplet catching fragments of desire, aspiration, and the quiet desperation of a million connected souls.' },
@@ -63,8 +63,8 @@ export const booksConfig: Book[] = [
     title: 'Minimalist Futures',
     author: 'Vinciane',
     description: 'Exploring the beauty of simplicity in a complex world. Less is not just more — it is everything.',
-    frontCoverImage: '/images/book3_front.png',
-    backCoverImage: '/images/book3_back.png',
+    frontCoverImage: 'images/book3_front.png',
+    backCoverImage: 'images/book3_back.png',
     pages: [
       { title: 'On Simplicity', content: 'Strip away the unnecessary. What remains is not emptiness but essence — the irreducible core of what it means to exist, to create, to be.' },
       { content: 'In a world drowning in noise, silence became the most revolutionary act. She chose it deliberately, like an artist choosing the perfect shade of white.' },

@@ -36,9 +36,11 @@ import * as THREE from 'three'
 import gsap from 'gsap'
 import { useBooksStore } from '~/stores/books'
 import { useThreeScene } from '~/composables/useThreeScene'
+import { useAsset } from '~/composables/useAsset'
 
 const booksStore = useBooksStore()
 const { createTimeline, killAllTimelines } = useThreeScene()
+const { asset } = useAsset()
 
 // Book dimensions
 const bookWidth = 1.7
@@ -71,7 +73,7 @@ const loadTextures = (frontUrl: string, backUrl: string) => {
 let idleAnim: gsap.core.Tween | null = null
 
 onMounted(() => {
-  loadTextures(booksStore.activeBook.frontCoverImage, booksStore.activeBook.backCoverImage)
+  loadTextures(asset(booksStore.activeBook.frontCoverImage), asset(booksStore.activeBook.backCoverImage))
   startIdleAnimation()
 })
 
@@ -157,7 +159,7 @@ watch(() => booksStore.activeBookId, () => {
     .to(book.scale, { x: 0.8, y: 0.8, z: 0.8, duration: 0.5 }, '<')
     // Swap textures at midpoint
     .call(() => {
-      loadTextures(booksStore.activeBook.frontCoverImage, booksStore.activeBook.backCoverImage)
+      loadTextures(asset(booksStore.activeBook.frontCoverImage), asset(booksStore.activeBook.backCoverImage))
     })
     // Animate in
     .to(book.position, { y: 0, duration: 0.8, ease: 'power2.out' })

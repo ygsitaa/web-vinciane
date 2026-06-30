@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute inset-0 z-10 object-cover w-full h-full" style="background: url('/bg-3dscene3.jpg') center/cover no-repeat;">
+  <div class="absolute inset-0 z-10 object-cover w-full h-full" :style="backgroundStyle">
     <!-- 3D Canvas -->
     <TresCanvas
       clear-color="transparent"
@@ -94,6 +94,14 @@
 <script setup lang="ts">
 import { OrbitControls } from '@tresjs/cientos'
 import { useBooksStore } from '~/stores/books'
+import { useAsset } from '~/composables/useAsset'
 
 const booksStore = useBooksStore()
+const { asset } = useAsset()
+const backgroundStyle = {
+  backgroundImage: `url('${asset('bg-3dscene3.jpg')}')`,
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat'
+}
 </script>
