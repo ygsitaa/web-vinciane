@@ -1,0 +1,27 @@
+{
+  "name": "nuxt-app",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "@pinia/nuxt": "^0.11.3",
+    "@tresjs/cientos": "^5.8.1",
+    "@tresjs/core": "^5.8.3",
+    "@tresjs/nuxt": "^5.6.3",
+    "@types/three": "^0.185.0",
+    "gsap": "^3.15.0",
+    "lottie-web": "^5.13.0",
+    "nuxt": "^4.4.8",
+    "pinia": "^3.0.4",
+    "three": "^0.185.0",
+    "vue": "^3.5.38",
+    "vue-router": "^5.1.0"
+  }
+}
