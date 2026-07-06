@@ -21,7 +21,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
           </svg>
-          Back to shelf
+          Quitter
         </button>
 
         <!-- Book spread -->
@@ -78,7 +78,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
-            Previous
+            Précédent
           </button>
           
           <!-- Desktop Prev -->
@@ -90,7 +90,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
-            Previous
+            Précédent
           </button>
 
           <!-- Page dots -->
@@ -110,7 +110,7 @@
             :disabled="currentPage >= totalPages - 1 && mobileShowRightPage"
             class="md:hidden flex items-center gap-2 text-white/50 hover:text-white disabled:text-white/15 disabled:cursor-not-allowed transition-all duration-300 text-xs uppercase tracking-widest"
           >
-            Next
+            Suivant
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
@@ -122,7 +122,7 @@
             :disabled="currentPage >= totalPages - 1"
             class="hidden md:flex items-center gap-2 text-white/50 hover:text-white disabled:text-white/15 disabled:cursor-not-allowed transition-all duration-300 text-xs uppercase tracking-widest"
           >
-            Next
+            Suivant
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>

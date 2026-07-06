@@ -71,15 +71,29 @@ const loadTextures = (frontUrl: string, backUrl: string) => {
 
 // Idle floating animation
 let idleAnim: gsap.core.Tween | null = null
+let idleRotAnim: gsap.core.Tween | null = null
 
 onMounted(() => {
   loadTextures(asset(booksStore.activeBook.frontCoverImage), asset(booksStore.activeBook.backCoverImage))
   startIdleAnimation()
 })
 
+const stopIdleAnimation = () => {
+  if (idleAnim) {
+    idleAnim.kill()
+    idleAnim = null
+  }
+  if (idleRotAnim) {
+    idleRotAnim.kill()
+    idleRotAnim = null
+  }
+}
+
 const startIdleAnimation = () => {
   if (!bookGroup.value) return
   const obj = bookGroup.value
+
+  stopIdleAnimation()
 
   // Gentle float
   idleAnim = gsap.to(obj.position, {
@@ -91,7 +105,7 @@ const startIdleAnimation = () => {
   })
 
   // Subtle rotation
-  gsap.to(obj.rotation, {
+  idleRotAnim = gsap.to(obj.rotation, {
     y: 0.08,
     duration: 5,
     ease: 'sine.inOut',
@@ -110,7 +124,7 @@ watch(() => booksStore.isBookOpen, (open) => {
 
   if (open) {
     // Stop idle
-    if (idleAnim) idleAnim.pause()
+    stopIdleAnimation()
 
     tl.to(book.rotation, {
       y: -0.3,
@@ -134,7 +148,7 @@ watch(() => booksStore.isBookOpen, (open) => {
       ease: 'power2.out'
     }, '-=0.3')
     .call(() => {
-      if (idleAnim) idleAnim.resume()
+      startIdleAnimation()
     })
   }
 })
@@ -145,6 +159,7 @@ watch(() => booksStore.activeBookId, () => {
   const book = bookGroup.value
 
   killAllTimelines()
+  stopIdleAnimation()
 
   const tl = createTimeline({
     onComplete: () => {

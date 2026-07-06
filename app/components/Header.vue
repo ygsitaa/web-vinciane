@@ -108,6 +108,13 @@
         >
           CONTACT
         </a>
+        <a
+          href="https://monblogtribusix.com/"
+          target="_blank"
+          class="text-[#FD9923]/90 hover:text-white transition-colors duration-300"
+        >
+          BLOG
+        </a>
       </nav>
 
       <!-- Mobile menu button -->
