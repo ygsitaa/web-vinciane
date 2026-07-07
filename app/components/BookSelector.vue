@@ -7,7 +7,7 @@
       class="group flex items-center gap-4 p-2 transition-all duration-500 bg-[#236661]/80 backdrop-blur-md border-b border-white/5"
       :class="[
         { 'pointer-events-none': booksStore.isTransitioning },
-        book.id === 'book-1' ? 'bg-[#236661]/80' : book.id === 'book-2' ? 'bg-[#FD9923]/80' : 'bg-[#A094B7]/80'
+        book.id === 'book-1' ? 'bg-[#236661]/80' : book.id === 'book-2' ? 'bg-[#5b5f41]/80' : 'bg-[#A094B7]/80'
       ]"
     >
       <!-- Index number -->

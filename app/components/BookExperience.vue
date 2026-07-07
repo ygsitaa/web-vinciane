@@ -29,7 +29,7 @@
       />
 
       <!-- Lighting -->
-      <TresAmbientLight :intensity="0.4" color="#e8e0d0" />
+      <TresAmbientLight :intensity="1" color="#e8e0d0" />
 
       <TresDirectionalLight
         :position="[5, 8, 5] as any"
@@ -42,13 +42,13 @@
 
       <TresDirectionalLight
         :position="[-3, 4, -2] as any"
-        :intensity="0.6"
+        :intensity="1"
         color="#c9a96e"
       />
 
       <TresPointLight
         :position="[0, -3, 4] as any"
-        :intensity="0.8"
+        :intensity="1"
         color="#4a90d9"
         :distance="15"
       />

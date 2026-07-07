@@ -1,0 +1,19 @@
+{
+    id: 'book-3',
+    title: 'Minimalist Futures',
+    author: 'Vinciane',
+    description: 'Exploring the beauty of simplicity in a complex world. Less is not just more — it is everything.',
+    frontCoverImage: 'images/book3_front.png',
+    backCoverImage: 'images/book3_back.png',
+    pages: [
+      { title: 'On Simplicity', content: 'Strip away the unnecessary. What remains is not emptiness but essence — the irreducible core of what it means to exist, to create, to be.' },
+      { content: 'In a world drowning in noise, silence became the most revolutionary act. She chose it deliberately, like an artist choosing the perfect shade of white.' },
+      { content: 'The future arrived not with a bang but with a gentle subtraction. Each day, something was removed. Each day, what remained became more precious.' },
+      { content: 'Minimalism was never about having less. It was about making room for what matters. And what matters, she discovered, was always simpler than she thought.' },
+      { content: 'The final page was blank. Not empty — full of possibility. The reader understood: the most important story was the one they would write themselves.' }
+    ],
+    stores: [
+      { name: 'Amazon', url: 'https://amazon.com' },
+      { name: 'Apple Books', url: 'https://books.apple.com' }
+    ]
+  }

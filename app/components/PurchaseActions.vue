@@ -8,14 +8,14 @@
       v-if="!booksStore.isBookOpen"
       ref="containerRef"
       class="fixed bottom-10 left-9 md:left-10 z-30 flex flex-col items-start gap-2 max-w-sm backdrop-blur-md border-b border-white/5 p-3 md:p-6"
-      :class="booksStore.activeBookId === 'book-1' ? 'bg-[#236661]/80' : booksStore.activeBookId === 'book-2' ? 'bg-[#FD9923]/80' : 'bg-[#A094B7]/80'"
+      :class="booksStore.activeBookId === 'book-1' ? 'bg-[#236661]/80' : booksStore.activeBookId === 'book-2' ? 'bg-[#5b5f41]/80' : 'bg-[#A094B7]/80'"
     >
       <!-- Book info -->
       <div class="text-left">
         <h2 class="text-2xl md:text-3xl font-serif font-bold text-white mb-1.5">
           {{ activeBook.title }}
         </h2>
-        <p class="text-white text-sm leading-relaxed max-w-xs ml-auto">
+        <p class="text-white text-sm leading-relaxed max-w-xs">
           {{ activeBook.description }}
         </p>
       </div>
